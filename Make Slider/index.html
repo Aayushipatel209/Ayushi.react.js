@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         img{
+             margin-top: 100px;
+             margin-left: 120px;
+         }
+    </style>
+</head>
+<body>
+    
+    <img src="" alt="" height="500px" width="80%">
+
+</body>
+</html>
+
+<script>
+
+    let arr=["https://images.unsplash.com/photo-1714584981219-850bec3bb612?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D","https://media.istockphoto.com/id/1310534205/photo/looking-at-the-grand-canyon-through-a-telescope.jpg?s=1024x1024&w=is&k=20&c=_64rEqwWM0e8rnd-VIF153NZ4Uqr5Y6rv7ZFHmaC9Vo=","https://media.istockphoto.com/id/1830031852/photo/town-of-lubenice-a-small-picturesque-town-on-the-island-of-cres-cute-small-rural-place-on-the.jpg?s=1024x1024&w=is&k=20&c=rNc2SfxLBSqI8ULeuSvBFJvay4RD_Qav07LBrqcL0f8=","https://media.istockphoto.com/id/162835845/photo/texas-landscape-in-morning.jpg?s=1024x1024&w=is&k=20&c=j88y4KzHyL_fDEAeQxdGbOmuFIr_4YGFJkODSRttJFw="]
+
+    let currentindex=0
+
+    setInterval(()=>{
+
+     currentindex=(currentindex+1)%arr.length
+     document.querySelector("img").src=arr[currentindex]
+
+
+    },2000)
+</script>
