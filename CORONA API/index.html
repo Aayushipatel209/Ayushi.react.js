@@ -48,11 +48,11 @@
 
     function CardList(data)
     {
-       let store=data.map((el)=>SingleCarad( el.loc,el.confirmedCasesIndian,el.confirmedCasesForeign,el.discharged, el.deaths,el.totalConfirmed))
+       let store=data.map((el)=>SingleCard( el.loc,el.confirmedCasesIndian,el.confirmedCasesForeign,el.discharged, el.deaths,el.totalConfirmed))
         document.getElementById("content").innerHTML=store.join('');
     }
 
-    function SingleCarad(loc, confirmedCasesIndian ,confirmedCasesForeign, discharged, deaths ,totalConfirmed){
+    function SingleCard(loc, confirmedCasesIndian ,confirmedCasesForeign, discharged, deaths ,totalConfirmed){
      
         let Card=`
     <div class="box">
