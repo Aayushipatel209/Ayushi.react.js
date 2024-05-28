@@ -41,7 +41,7 @@ let searchByButton = document.getElementById("search-by-button");
 let ProductData = []
 
 function FetchData() {
-    fetch("https://add-to-cart-backend-3a8o.onrender.com/pitches")
+    fetch("https://addtocart-backend-24rv.onrender.com/pitches")
         .then((res) => res.json())
         .then((data) => {
             CardList(data)
@@ -92,7 +92,7 @@ pitchCreateBtn.addEventListener("click", () => {
 
     // console.log(Product)
 
-    fetch('https://add-to-cart-backend-3a8o.onrender.com/pitches',
+    fetch('https://addtocart-backend-24rv.onrender.com/pitches',
         {
             method: 'POST',
             headers: {
@@ -120,7 +120,7 @@ document.addEventListener("click", (e) => {
 })
 
 function DeleteData(id) {
-    fetch(`https://add-to-cart-backend-3a8o.onrender.com/pitches${id}`, {
+    fetch(`https://addtocart-backend-24rv.onrender.com/pitches${id}`, {
         method: 'DELETE',
     })
 
@@ -186,7 +186,7 @@ document.addEventListener("click", (e) => {
 
 function Populatedata(id)
 {
-    fetch(`https://add-to-cart-backend-3a8o.onrender.com/pitches${id}`)
+    fetch(`https://addtocart-backend-24rv.onrender.com/pitches${id}`)
     .then((res)=>res.json())
     .then((data)=>{
         console.log(data)
@@ -216,7 +216,7 @@ updatePitchBtn.addEventListener("click",()=>{
 
     console.log(UpdateData)
 
-    fetch(`https://add-to-cart-backend-3a8o.onrender.com/pitches${UpdateData.id}`,{
+    fetch(`https://addtocart-backend-24rv.onrender.com/pitches${UpdateData.id}`,{
         method:"PUT",
         headers:{
             "Content-Type": "application/json",
@@ -244,7 +244,7 @@ document.addEventListener("click", (e) => {
 
 function UpdatePrice(id)
 {
-    fetch(`https://add-to-cart-backend-3a8o.onrender.com/pitches${id}`)
+    fetch(`https://addtocart-backend-24rv.onrender.com/pitches${id}`)
     .then((res)=>res.json())
     .then((data)=>{
         console.log(data)
@@ -273,7 +273,7 @@ updatePricePitchPriceButton.addEventListener("click",()=>{
 
     console.log(UpdatePriceData)
 
-    fetch(`https://add-to-cart-backend-3a8o.onrender.com/pitches${UpdatePriceData.id}`,{
+    fetch(`https://addtocart-backend-24rv.onrender.com/pitches${UpdatePriceData.id}`,{
         method:"PUT",
         headers:{
             "Content-Type": "application/json",
